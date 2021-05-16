@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack serve --open --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ganesh deshmukh",
@@ -19,7 +20,24 @@
   },
   "homepage": "https://github.com/Ganesh1991/react-update-boilerplate#readme",
   "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.37.0",
-    "webpack-cli": "^4.7.0"
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0"
   }
 }
